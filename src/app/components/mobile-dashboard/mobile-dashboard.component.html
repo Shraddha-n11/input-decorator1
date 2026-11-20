@@ -1,0 +1,13 @@
+<h1 class="text-center bg-dark text-white">Mobile Input Decorator Task </h1>
+<div class="row" *ngIf="mobilesArr.length > 0 ; else nomobile" > 
+    <div class="col-12 mb-3" *ngFor="let mobile of mobilesArr">
+    <app-mobile [mobileObj]="mobile"></app-mobile>
+    </div>
+
+     </div>
+     <ng-template #nomobile> <p class="alert alert-danger">
+        No mobile added yet!!
+     </p></ng-template>
+
+   
+
